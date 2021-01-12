@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* BASIC */
+
+html {
+  background-color: #2f373b;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+a {
+  color: #92badd;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display:inline-block;
+  margin: 40px 8px 10px 8px; 
+  color: #cccccccc;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: normal;
+  display:inline-block;
+  margin: 40px 8px 10px 8px; 
+  color: #cccccccc;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display:inline-block;
+  margin: 40px 8px 10px 8px; 
+  color: #cccccc;
+}
+
+h3 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display:inline-block;
+  margin: 40px 8px 10px 8px; 
+  color: #e07b7b;
+}
+
+
+
+/* STRUCTURE */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+#formContent {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+#formFooter {
+  background-color: #f6f6f6;
+  border-top: 1px solid #dce8f1;
+  padding: 25px;
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+
+
+/* TABS */
+
+
+
+
+/* FORM TYPOGRAPHY*/
+
+input[type=button], input[type=submit], input[type=reset]  {
+  background-color: #56baed;
+  border: none;
+  color: white;
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+  background-color: #39ace7;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+input[type=text] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type=text]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
+
+input[type=text]:placeholder {
+  color: #cccccc;
+}
+ul {
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2f373b;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  color: rgb(61, 199, 187);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: double;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: rgba(187, 184, 159, 0.13);
+}
+</style>
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/text">Text</a></li>
+    <li><a href="/vid_aud">Audio</a></li>
+    <li><a href="/youtube">YouTube</a></li>
+    <li><a href="/feed">Feedback portal</a></li>
+    <li style="float:right"><a class="active" href="/logout">Logout</a></li>
+</ul>
+<body>
+    <br>
+    <h1>Welcome to Text Summarizer</h1><br>
+    <p>What is the purpose: We take a text file as input(uptill now only .txt files are working) and read text from it. Then we split the text according to the sentences and calculate the importance of every sentence by analysing which sentence has more of the important words in it. We then select 30% of the most important text from it.By this we summarize the contents of the text file. A new text file is downloaded at the end</p>
+    <br>
+    <div align=center><a href="/text">Go to Text Summarizer</a>
+    </div>
+    <br>
+    <h1>And Audio to Text Converter</h1>
+    <p>What is the purpose: Does what it says. Give an Audio file as input(.wav file please) and then the audio will be converted to a text. For this we use google speech to text as well as python api Speech Recognition as well. Limitation: Please keep the audio's short or else it will take time. Have patience</p>
+    <div align=center><a href="/vid_aud">Go to Audio Converter</a>
+    </div>
+    <br>
+    
+    <h1>And YouTube Audio downloader</h1>
+    <p>What is the purpose: Does what it says. Give YouTube Video url as input and the subsequent audio file will be downloaded. Here the YouTube api for python is used to download the video via the url and then using moviepy the video file is converted into audio</p>
+    <div align=center><a href="/youtube">Go to YouTube Audio Downloader</a>
+    </div>
+    <br>
+    
+  </body>
+</div>
